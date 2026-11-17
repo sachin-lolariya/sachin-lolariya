@@ -24,9 +24,18 @@
 
 ### `01` / About Me
 
-I am a passionate **Web Developer and Web Designer** dedicated to building clean, responsive, and user-friendly websites. I enjoy bridging visual design with practical code to create seamless, enjoyable web experiences that adapt cleanly across devices.
-
-With a strong foundation in core web standards and structured programming, I bring creativity, an organized approach to development workflows, and quick adaptability when learning new tools and tackling technical challenges.
+<table>
+  <tr>
+    <td width="130" align="center" valign="middle">
+      <img src="assets/avatar.gif" alt="Sachin Lolariya Animated Avatar" width="115" />
+    </td>
+    <td>
+      I am a passionate <strong>Web Developer and Web Designer</strong> dedicated to building clean, responsive, and user-friendly websites. I enjoy bridging visual design with practical code to create seamless, enjoyable web experiences that adapt cleanly across devices.
+      <br /><br />
+      With a strong foundation in core web standards and structured programming, I bring creativity, an organized approach to development workflows, and quick adaptability when learning new tools and tackling technical challenges.
+    </td>
+  </tr>
+</table>
 
 ---
 
