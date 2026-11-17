@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="hero-title hero-desc">
   <title id="hero-title">Sachin Lolariya — Web Developer &amp; Web Designer</title>
-  <desc id="hero-desc">An editorial burgundy and wine themed developer banner with animated atmospheric glowing orbits and technical grid.</desc>
+  <desc id="hero-desc">An editorial burgundy developer banner with dynamic glowing sweeps, flowing particle paths, and visible orbital motion.</desc>
 
   <defs>
-    <!-- Background Gradients -->
+    <!-- Background Gradient -->
     <linearGradient id="sh-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#10070C"/>
       <stop offset="45%" stop-color="#190B12"/>
@@ -11,115 +11,124 @@
       <stop offset="100%" stop-color="#10070C"/>
     </linearGradient>
 
-    <!-- Wine Ambient Glow -->
-    <radialGradient id="sh-glow1" cx="80%" cy="35%" r="55%">
-      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.45"/>
-      <stop offset="50%" stop-color="#451126" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
-    </radialGradient>
-
-    <radialGradient id="sh-glow2" cx="15%" cy="85%" r="45%">
-      <stop offset="0%" stop-color="#451126" stop-opacity="0.35"/>
+    <!-- Ambient Glowing Pulsing Core -->
+    <radialGradient id="sh-glow1" cx="80%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#451126" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
     </radialGradient>
 
     <!-- Technical Grid Pattern -->
     <pattern id="sh-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#C77B9B" stroke-opacity="0.07" stroke-width="0.8"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#C77B9B" stroke-opacity="0.08" stroke-width="0.8"/>
     </pattern>
 
-    <!-- Glowing Accent Rule -->
-    <linearGradient id="sh-line-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Glowing Traveling Beam Gradient -->
+    <linearGradient id="sh-beam-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#701A3D" stop-opacity="0"/>
-      <stop offset="25%" stop-color="#C77B9B" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#F8F0F3" stop-opacity="0.95"/>
-      <stop offset="75%" stop-color="#C77B9B" stop-opacity="0.6"/>
+      <stop offset="35%" stop-color="#C77B9B" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="65%" stop-color="#E5B5C7" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#701A3D" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Subtle Wave Stroke Gradient -->
+    <!-- Flowing Wave Stroke Gradient -->
     <linearGradient id="sh-wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#451126" stop-opacity="0.1"/>
-      <stop offset="40%" stop-color="#701A3D" stop-opacity="0.5"/>
-      <stop offset="70%" stop-color="#C77B9B" stop-opacity="0.75"/>
-      <stop offset="100%" stop-color="#E5B5C7" stop-opacity="0.15"/>
+      <stop offset="0%" stop-color="#451126" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#C77B9B" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F8F0F3" stop-opacity="0.9"/>
     </linearGradient>
 
-    <!-- Soft Blur Filter -->
-    <filter id="sh-blur" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="14"/>
+    <!-- Soft Glow Blur Filter -->
+    <filter id="sh-blur-lg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10"/>
     </filter>
-    <filter id="sh-blur-sm" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4"/>
+    <filter id="sh-blur-sm" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3"/>
     </filter>
   </defs>
 
-  <!-- Base Canvas -->
+  <!-- Base Background -->
   <rect width="1200" height="380" rx="16" fill="url(#sh-bg)"/>
 
   <!-- Technical Grid Overlay -->
   <rect width="1200" height="380" rx="16" fill="url(#sh-grid)"/>
 
-  <!-- Ambient Light Fields -->
-  <circle cx="980" cy="150" r="280" fill="url(#sh-glow1)"/>
-  <circle cx="160" cy="320" r="220" fill="url(#sh-glow2)"/>
+  <!-- Breathing Ambient Light Field -->
+  <circle cx="950" cy="180" r="260" fill="url(#sh-glow1)">
+    <animate attributeName="r" values="240;290;240" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- Subtle Corner Technical Marks -->
-  <g stroke="#C77B9B" stroke-opacity="0.3" stroke-width="1" fill="none">
+  <!-- Corner Brackets -->
+  <g stroke="#C77B9B" stroke-opacity="0.35" stroke-width="1.2" fill="none">
     <path d="M 28 44 L 28 28 L 44 28"/>
     <path d="M 1172 44 L 1172 28 L 1156 28"/>
     <path d="M 28 336 L 28 352 L 44 352"/>
     <path d="M 1172 336 L 1172 352 L 1156 352"/>
   </g>
 
-  <!-- Right Geometric Composition (Restrained Orbital Architecture) -->
-  <g transform="translate(950, 190)">
-    <!-- Outer Static Orbital Track -->
-    <circle cx="0" cy="0" r="145" fill="none" stroke="#701A3D" stroke-opacity="0.35" stroke-width="1"/>
-    
-    <!-- Dashed Rotating Ring -->
-    <circle cx="0" cy="0" r="120" fill="none" stroke="#C77B9B" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="6 14">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="50s" repeatCount="indefinite"/>
-    </circle>
+  <!-- Dynamic Energy Flow Path (Animated Light traveling along curve) -->
+  <path id="flowPathBase" d="M 540 330 C 680 280, 780 70, 950 100 S 1120 230, 1200 130" fill="none" stroke="#701A3D" stroke-opacity="0.3" stroke-width="2"/>
+  
+  <!-- Flowing Glow Pulse -->
+  <path d="M 540 330 C 680 280, 780 70, 950 100 S 1120 230, 1200 130" fill="none" stroke="url(#sh-wave-grad)" stroke-width="3" stroke-dasharray="120 600" stroke-dashoffset="720">
+    <animate attributeName="stroke-dashoffset" values="720;0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 540 330 C 680 280, 780 70, 950 100 S 1120 230, 1200 130" fill="none" stroke="#E5B5C7" stroke-opacity="0.6" stroke-width="8" filter="url(#sh-blur-lg)" stroke-dasharray="120 600" stroke-dashoffset="720">
+    <animate attributeName="stroke-dashoffset" values="720;0" dur="3s" repeatCount="indefinite"/>
+  </path>
 
-    <!-- Inner Track -->
-    <circle cx="0" cy="0" r="90" fill="none" stroke="#E5B5C7" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="2 8">
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="35s" repeatCount="indefinite"/>
-    </circle>
+  <!-- Right Geometric Composition: Visible Orbital Motion -->
+  <g transform="translate(950, 185)">
+    <!-- Base Concentric Rings -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#701A3D" stroke-opacity="0.35" stroke-width="1"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#701A3D" stroke-opacity="0.4" stroke-width="1"/>
 
-    <!-- Core Radiant Point -->
-    <circle cx="0" cy="0" r="38" fill="#451126" fill-opacity="0.45" stroke="#701A3D" stroke-width="1"/>
-    <circle cx="0" cy="0" r="4" fill="#F8F0F3">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Satellite Nodes with Orbit -->
+    <!-- Fast Rotating Dashed Ring (Clockwise, 9s) -->
     <g>
-      <circle cx="120" cy="0" r="3.5" fill="#E5B5C7">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="-90" cy="0" r="2.5" fill="#C77B9B"/>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+      <circle cx="0" cy="0" r="115" fill="none" stroke="#C77B9B" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="8 16"/>
+      <circle cx="115" cy="0" r="4" fill="#FFFFFF" filter="url(#sh-blur-sm)"/>
+      <circle cx="115" cy="0" r="3" fill="#FFFFFF"/>
+      <circle cx="-115" cy="0" r="2.5" fill="#E5B5C7"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
     </g>
 
+    <!-- Counter-Rotating Inner Ring (Counter-Clockwise, 6s) -->
     <g>
-      <circle cx="0" cy="145" r="3" fill="#C77B9B">
-        <animate attributeName="opacity" values="0.8;0.2;0.8" dur="4s" repeatCount="indefinite"/>
-      </circle>
-      <animateTransform attributeName="transform" type="rotate" from="45" to="405" dur="36s" repeatCount="indefinite"/>
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#E5B5C7" stroke-opacity="0.4" stroke-width="1.2" stroke-dasharray="4 10"/>
+      <circle cx="0" cy="85" r="3.5" fill="#F8F0F3"/>
+      <circle cx="0" cy="-85" r="2" fill="#C77B9B"/>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="6s" repeatCount="indefinite"/>
     </g>
+
+    <!-- Outer Satellite Orbit (Clockwise, 15s) -->
+    <g>
+      <circle cx="140" cy="0" r="3.5" fill="#E5B5C7"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="15s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Radiant Core Beacon with Visible Pulse -->
+    <circle cx="0" cy="0" r="32" fill="#451126" fill-opacity="0.6" stroke="#C77B9B" stroke-width="1">
+      <animate attributeName="r" values="30;36;30" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="8" fill="#F8F0F3" filter="url(#sh-blur-sm)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
   </g>
-
-  <!-- Flowing Mathematical Path Behind Typography -->
-  <path d="M 620 330 C 740 270, 810 90, 960 110 S 1120 220, 1200 140" fill="none" stroke="url(#sh-wave-grad)" stroke-width="2"/>
-  <path d="M 620 330 C 740 270, 810 90, 960 110 S 1120 220, 1200 140" fill="none" stroke="#C77B9B" stroke-opacity="0.2" stroke-width="8" filter="url(#sh-blur)"/>
 
   <!-- Left Content / Editorial Typography -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
-    <!-- Category & Orientation Tag -->
+    <!-- Live Status Indicator & Tag -->
     <g transform="translate(80, 78)">
-      <rect x="0" y="0" width="8" height="8" fill="#C77B9B" rx="1"/>
-      <text x="20" y="8" fill="#E5B5C7" font-size="12" font-weight="600" letter-spacing="3.5">WEB DEVELOPMENT  /  WEB DESIGN</text>
+      <!-- Animated Live Pulse Dot -->
+      <circle cx="5" cy="5" r="4" fill="#E5B5C7">
+        <animate attributeName="r" values="3;6;3" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="5" cy="5" r="2" fill="#FFFFFF"/>
+      <text x="22" y="9" fill="#E5B5C7" font-size="12" font-weight="600" letter-spacing="3.5">WEB DEVELOPMENT  /  WEB DESIGN</text>
     </g>
 
     <!-- Headline Name -->
@@ -131,34 +140,32 @@
     <!-- Narrative Focus -->
     <text x="80" y="254" fill="#C77B9B" font-size="15" font-weight="400" letter-spacing="0.3">Focused on clean, responsive, and user-friendly websites with practical craftsmanship.</text>
 
-    <!-- Metric / Value Micro-Badges -->
+    <!-- Micro-Badges -->
     <g transform="translate(80, 290)">
-      <!-- Badge 1: Clean Architecture -->
       <rect x="0" y="0" width="168" height="26" rx="4" fill="#190B12" stroke="#451126" stroke-width="1"/>
       <circle cx="12" cy="13" r="3" fill="#C77B9B"/>
       <text x="24" y="17" fill="#F8F0F3" font-size="11" font-weight="500" letter-spacing="0.5">Responsive Layouts</text>
 
-      <!-- Badge 2: Practical Web Code -->
       <rect x="180" y="0" width="164" height="26" rx="4" fill="#190B12" stroke="#451126" stroke-width="1"/>
       <circle cx="192" cy="13" r="3" fill="#E5B5C7"/>
       <text x="204" y="17" fill="#F8F0F3" font-size="11" font-weight="500" letter-spacing="0.5">User-Centric Design</text>
 
-      <!-- Badge 3: Continuous Learning -->
       <rect x="356" y="0" width="170" height="26" rx="4" fill="#190B12" stroke="#451126" stroke-width="1"/>
       <circle cx="368" cy="13" r="3" fill="#701A3D"/>
       <text x="380" y="17" fill="#F8F0F3" font-size="11" font-weight="500" letter-spacing="0.5">Adaptable &amp; Creative</text>
     </g>
   </g>
 
-  <!-- Glowing Horizontal Division Line -->
-  <rect x="0" y="348" width="1200" height="2" fill="url(#sh-line-glow)"/>
+  <!-- Static Track for Division Line -->
+  <line x1="0" y1="348" x2="1200" y2="348" stroke="#451126" stroke-width="1.5" stroke-opacity="0.4"/>
 
-  <!-- Subtle Accent Light Point on Rule -->
-  <circle cx="480" cy="349" r="2.5" fill="#F8F0F3">
-    <animate attributeName="cx" values="200;1000;200" dur="14s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="7s" repeatCount="indefinite"/>
-  </circle>
+  <!-- High-Visibility Traveling Laser Beam across Divider Line -->
+  <g>
+    <rect x="-300" y="346" width="300" height="3" fill="url(#sh-beam-grad)">
+      <animate attributeName="x" values="-300;1200" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 
   <!-- Technical Meta String in Bottom Corner -->
-  <text x="1135" y="340" fill="#701A3D" font-family="'Courier New', monospace" font-size="11" text-anchor="end" letter-spacing="2">SYS::PORTFOLIO // V2.6</text>
+  <text x="1135" y="340" fill="#701A3D" font-family="'Courier New', monospace" font-size="11" text-anchor="end" letter-spacing="2">SYS::PORTFOLIO // LIVE</text>
 </svg>
