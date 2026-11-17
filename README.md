@@ -105,7 +105,17 @@ With a strong foundation in core web standards and structured programming, I bri
 
 ---
 
-### `06` / GitHub Activity & Philosophy
+### `06` / GitHub Activity & Contributions
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sachin-lolariya/sachin-lolariya/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sachin-lolariya/sachin-lolariya/output/github-contribution-grid-snake.svg" />
+    <img alt="Sachin Lolariya's GitHub Contribution Grid Snake Animation" src="https://raw.githubusercontent.com/sachin-lolariya/sachin-lolariya/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  </picture>
+</div>
+
+<br />
 
 > *I believe in displaying genuine development work rather than artificial vanity metrics. This profile represents an active, growing foundation where projects, code repositories, and documentation are shared transparently as they are built.*
 
