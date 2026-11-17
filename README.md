@@ -79,33 +79,7 @@ With a strong foundation in core web standards and structured programming, I bri
 
 ---
 
-### `05` / Selected Work
-
-#### 🌐 [Atrac Industries — Responsive Website](https://www.atracindustries.com/)
-* **Role:** UI implementation and responsive front-end development during web development internship.
-* **Focus:** Creating responsive page layouts, clean styling, and ensuring reliable cross-device presentation.
-* **Stack:** HTML5, CSS3, Bootstrap, WordPress
-* **Live Site:** [atracindustries.com](https://www.atracindustries.com/)
-
-#### 🌐 [Ur atom Epower — WordPress Website](https://uratomepower.com/)
-* **Role:** Dynamic WordPress website implementation and layout customization.
-* **Focus:** Component integration, structure setup, and responsive navigation.
-* **Stack:** WordPress, HTML5, CSS3, JavaScript
-* **Live Site:** [uratomepower.com](https://uratomepower.com/)
-
-#### 💻 [PHP Web Project — Dynamic Web Application](http://checkwebsite.kesug.com)
-* **Role:** Backend logic and dynamic data rendering.
-* **Focus:** Core PHP development, server-side data handling, and clean database integration.
-* **Stack:** PHP, SQL, HTML5, CSS3
-* **Live Site:** [checkwebsite.kesug.com](http://checkwebsite.kesug.com)
-
-#### ⏳ Udaan Wings *(In Progress)*
-* **Role:** WordPress website development and page architecture.
-* **Status:** Currently in development. Full project notes and deliverables will be documented upon release.
-
----
-
-### `06` / GitHub Activity & Contributions
+### `05` / GitHub Activity & Contributions
 
 <div align="center">
   <picture>
@@ -124,7 +98,7 @@ With a strong foundation in core web standards and structured programming, I bri
 
 ---
 
-### `07` / Languages
+### `06` / Languages
 
 * **English** — Professional working proficiency
 * **Hindi** — Native / Fluent
@@ -132,7 +106,7 @@ With a strong foundation in core web standards and structured programming, I bri
 
 ---
 
-### `08` / Let's Connect
+### `07` / Let's Connect
 
 Whether you have an interesting web project, an internship opportunity, or simply want to talk about clean web development and design:
 
