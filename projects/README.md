@@ -1,16 +1,33 @@
-# Project notes
+# Project Notes & Verified Details
 
-Use this file to expand each project with verified details before linking source repositories.
+This file tracks project details verified from the resume and active deliverables.
 
-## Atrac Industries
-- Public website: https://www.atracindustries.com/
-- Work described: UI implementation and responsive front-end work during a web development internship.
-- Stack described: HTML5, CSS3, Bootstrap and WordPress.
+---
 
-## Ur atom Epower
-- Public website: https://uratomepower.com/
-- Work described: WordPress website development and customization.
+## 1. Atrac Industries — Responsive Website
+- **Public URL:** https://www.atracindustries.com/
+- **Role/Work:** UI implementation and responsive front-end development completed during a web development internship.
+- **Technologies:** HTML5, CSS3, Bootstrap, WordPress.
+- **Key Deliverables:** Clean layout structure, mobile and tablet responsiveness, cross-browser compatibility.
 
-## Udaan Wings
-- Status: In progress.
-- Add the public website link and your exact contribution after it is ready to share.
+---
+
+## 2. Ur atom Epower — WordPress Website
+- **Public URL:** https://uratomepower.com/
+- **Role/Work:** Front-end and dynamic WordPress website implementation and customization.
+- **Technologies:** WordPress, HTML5, CSS3, JavaScript.
+- **Key Deliverables:** Custom page structure, dynamic content presentation, responsive navigation.
+
+---
+
+## 3. PHP Project — Dynamic Web Application
+- **Public URL:** http://checkwebsite.kesug.com
+- **Role/Work:** Server-side logic, data rendering, and structured backend scripting.
+- **Technologies:** PHP, SQL, HTML5, CSS3.
+- **Key Deliverables:** Form handling, database queries, structured dynamic views.
+
+---
+
+## 4. Udaan Wings
+- **Status:** In Progress.
+- **Scope:** WordPress website architecture and development. Detailed public links and repository references will be documented upon launch.
